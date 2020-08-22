@@ -1,17 +1,37 @@
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    /* justify-content: center; */
+    align-items: center;
+}
+
 .flex-container {
     display: flex; /* A Flexible Layout must have a parent element with the display property set to flex. */
     flex-flow: row nowrap; /* This is equal to "flex-direction: row; flex-wrap: nowrap" */
     background-color: #aaaaaa;
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 50rem;
 }
 
 .flex-container-left {
-    flex: 0 1 auto;
+    order: 1;
+    /* flex-grow: 1; */
+    /* flex: 0 1 auto; */
 }
 
 .flex-container-mid {
-    flex: 0 1 auto;
+    order: 2;
+    /* flex-grow: 8; */
+    /* flex: 0 1 auto; */
 }
 
 .flex-container-right {
-    flex: 0 1 auto;
+    order: 3;
+    /* flex-grow: 1; */
+    /* flex: 0 1 auto; */
+}
+
+footer {
+    margin-top: 10px;
+    text-align: center;
 }
