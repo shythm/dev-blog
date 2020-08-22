@@ -1,0 +1,17 @@
+.flex-container {
+    display: flex; /* A Flexible Layout must have a parent element with the display property set to flex. */
+    flex-flow: row nowrap; /* This is equal to "flex-direction: row; flex-wrap: nowrap" */
+    background-color: #aaaaaa;
+}
+
+.flex-container-left {
+    flex: 0 1 auto;
+}
+
+.flex-container-mid {
+    flex: 0 1 auto;
+}
+
+.flex-container-right {
+    flex: 0 1 auto;
+}
